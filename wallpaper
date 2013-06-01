@@ -1,0 +1,13 @@
+#!/bin/bash
+
+WALLPAPER="$(cat $HOME/.wallpaper)"
+
+if [ "$1" ]; then
+	WALLPAPER="$1"
+fi
+
+if [ ! -f $WALLPAPER ]; then
+	xsetroot -solid black
+else
+	feh --bg-center $WALLPAPER
+fi

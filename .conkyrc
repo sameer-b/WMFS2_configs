@@ -1,0 +1,27 @@
+##############################################
+#  Settings
+##############################################
+background no
+out_to_x no
+out_to_console yes
+update_interval 2
+total_run_times 0
+uppercase no
+short_units yes
+use_spacer none
+if_up_strictness address
+##############################################
+#  Output
+##############################################
+TEXT
+^s[left;\#445544;     ] ^i[left;0;0;/home/sam/.config/wmfs/icons/arch.png] ^s[left; \#007fff ;${kernel}] ^s[right;\#445544; ]\
+^s[right;\#269cb5;Uptime: ] ^s[right;\#D7D7D7;${uptime_short}] ^s[right;\#445544; ]\
+^s[right;\#D7D7D7; ] ^s[right;\#007fff; ]\
+^s[right;\#445544;  ]\
+^s[right;\#269cb5;CPU:] ^s[right;\#AADB0F; ${cpu}% ] ^p[right;15;5;0; ${cpu};25;\#666666;\#007fff;ckycpu]\
+^s[right;\#445544;   ]\
+^s[right;\#269cb5;MEM:] ^s[right;\#AADB0F; $mem ]\ ^p[right;15;5;0; ${memperc};100;\#666666;\#007fff;ckymem]\
+^s[right;\#445544;   ]\
+^s[right;\#269cb5; ] ^i[right;0;0;/home/sam/.config/wmfs/icons/net_down_01.png] ^s[right;\#D7D7D7;${downspeedf wlp9s0}] ^s[right;\#445544; Kb/s ]\
+^s[right;\#269cb5; ] ^i[right;0;0;/home/sam/.config/wmfs/icons/net_up_01.png] ^s[right;\#D7D7D7;${upspeedf wlp9s0}] ^s[right;\#445544; Kb/s  ]\
+^s[right;\#269cb5; ] ^i[right;0;0;/home/sam/.config/wmfs/icons/clock.png] ^s[right;\#D7D7D7;${time %a %d/%b %I:%M %p}] ^s[right;\#445544;  ]

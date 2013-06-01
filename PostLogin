@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# Note: this is a sample and will not be run as is.
+pnmixer &
+nm-applet &
+wallpaper /home/sam/Pictures/clean-pixel-landscape.jpg &
+#lxterminal &
+synapse   &
+x11vnc --forever &
+conky -c ~/.conkyrc | while true; read line; do wmfs -c status "bar $line"; done &
+#conky -c ~/.conkyrc_wmfs_bottom | while true; read line; do wmfs -c status "bottom $line"; done &
+dunst &
+xfce4-power-manager & 
+compton -c &
+thunar --daemon 
