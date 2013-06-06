@@ -6,12 +6,17 @@
      # No name mean default
      name = "default"
  
-    #font = "-*-tamsyn-medium-*-*-*-*-101-*-*-*-*-*-*"
-   font= "fixed"
+
+
+
+font ="-misc-dejavu sans mono-medium-r-normal--0-69-0-0-*-0-iso8859-1"
+# font="-misc-terminum-medium-r-normal-*-13-65-75-75-c-80-iso10646-*"
+
+   
 
   
    # Bars
-     bars_width = 18
+     bars_width = 14
      bars_fg = "#D3D3D3"
      bars_bg = "#000000"
 
@@ -22,7 +27,7 @@
 
      tags_sel_fg    = "#D3D3D3"
      tags_sel_bg    = "#333333"
-     tags_sel_statusline = "\R[0;0;100;2;#AADB0F]"
+     tags_sel_statusline = "\R[0;0;100;1;#AADB0F]"
 
      tags_occupied_fg = "#D3D3D3"
      tags_occupied_bg = "#222222"
