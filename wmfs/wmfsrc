@@ -1,43 +1,41 @@
 ##a Possible file inclusion: @include "file"
+[root]
+background_command="PostLogin"
+[/root]
+
+
 
 [themes]
 
     [theme]
+     font="-*-ohsnap-medium-*-*-*-11-*-*-*-*-*-*-*"
      # No name mean default
      name = "default"
- 
-
-
-
-font ="-misc-dejavu sans mono-medium-r-normal--0-69-0-0-*-0-iso8859-1"
-# font="-misc-terminum-medium-r-normal-*-13-65-75-75-c-80-iso10646-*"
-
-   
 
   
    # Bars
-     bars_width = 14
-     bars_fg = "#D3D3D3"
+     bars_width = 18
+     bars_fg = "#ffffff"
      bars_bg = "#000000"
 
     # Element tags
      tags_normal_fg = "#D3D3D3"
-     tags_normal_bg = "#111111"
+     tags_normal_bg = "#000000"
      # tags_normal_statusline = ""
 
      tags_sel_fg    = "#D3D3D3"
-     tags_sel_bg    = "#333333"
-     tags_sel_statusline = "\R[0;0;100;1;#AADB0F]"
+     tags_sel_bg    = "#222222"
+     tags_sel_statusline = "\R[0;0;100;1;#66a9ba]"
 
      tags_occupied_fg = "#D3D3D3"
-     tags_occupied_bg = "#222222"
-     tags_occupied_statusline = "\R[0;0;100;1;#191919]"
+     tags_occupied_bg = "#000000"
+     tags_occupied_statusline = "\R[0;0;100;1;#000000]"
 
      tags_urgent_fg    = "#CC0000"
-     tags_urgent_bg    = "#111111"
+     tags_urgent_bg    = "#000000"
      tags_urgent_statusline = "\R[0;0;100;1;#CC0000]"
 
-     tags_border_color = "#222222"
+     tags_border_color = "#000000"
      tags_border_width = 0
      
      # Frame / Client
@@ -46,7 +44,7 @@ font ="-misc-dejavu sans mono-medium-r-normal--0-69-0-0-*-0-iso8859-1"
      # client_normal_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
 
      client_sel_fg = "#ffffff"
-     client_sel_bg = "#222222"
+     client_sel_bg = "#000000"
      # client_sel_statusline = "\s[3;9;#121212;x] \s[2;8;#ff0000;x](1;client_close)"
 
      # client_free_statusline = ""
@@ -134,16 +132,7 @@ font ="-misc-dejavu sans mono-medium-r-normal--0-69-0-0-*-0-iso8859-1"
 [rules]
 
   [rule]
-      # use instance = "*" for a all-clients rule
-      instance = "lxterminal"
-
-      # role = "" name = "" theme = "default"
-
-      screen = 0
-
-      free = true
-      tab = false
-      ignore_tag = false
+      
   [/rule]
 
 [/rules]
@@ -176,7 +165,7 @@ font ="-misc-dejavu sans mono-medium-r-normal--0-69-0-0-*-0-iso8859-1"
 [keys]
 
   [key] mod = {"Alt"} key = "Return" func = "spawn" cmd = "lxterminal --geometry=73x20" [/key]
-# [key] mod = {"Super"} key = "Return" func = "spawn" cmd = "urxvt" [/key]
+  [key] mod = {"Super"} key = "Return" func = "spawn" cmd = "chromium" [/key]
   [key] mod = {"Control", "Alt"} key = "q" func = "quit" [/key]
   [key] mod = {"Alt"} key = "c" func = "client_close" [/key]
   [key] mod = {"Alt"} key = "s" func = "spawn" cmd = "slock" [/key]
@@ -275,5 +264,6 @@ font ="-misc-dejavu sans mono-medium-r-normal--0-69-0-0-*-0-iso8859-1"
   #[key] mod = {"Super"} key = "p" func = "launcher" cmd = "exec" [/key]
 
 [/keys]
+
 
 
